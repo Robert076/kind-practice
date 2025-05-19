@@ -1,5 +1,7 @@
 # kind-practice
 
+### Running the pod
+
 1. Create the pod:
 ```bash
 kubectl apply -f nginx-pod.yml
