@@ -36,4 +36,4 @@ kubectl get pods -o wide
 kubectl describe pod/nginx-pod
 ```
 
-
+h
