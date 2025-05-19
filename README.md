@@ -36,4 +36,10 @@ kubectl get pods -o wide
 kubectl describe pod/nginx-pod
 ```
 
-h
+---
+
+### In case you didn't create a cluster before, start one using the kind config provided
+```bash
+kind create cluster --config ~/.kube/kind_cluster
+```
+
