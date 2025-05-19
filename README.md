@@ -42,4 +42,8 @@ kubectl describe pod/nginx-pod
 ```bash
 kind create cluster --config ~/.kube/kind_cluster
 ```
+But obviously make sure you install kind before (on macOS just use brew install kind)
 
+And also make sure you put the config file in the right place.
+
+If not just modify the ```kind create``` command
