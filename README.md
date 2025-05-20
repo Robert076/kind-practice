@@ -38,6 +38,11 @@ kubectl get pods -o wide
 kubectl describe pod/nginx-pod
 ```
 
+5. Get into the pod:
+```bash
+kubectl exec -ti nginx-pod -- /bin/bash
+```
+
 ---
 
 ### In case you didn't create a cluster before, start one using the kind config provided
