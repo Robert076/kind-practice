@@ -38,6 +38,11 @@ kubectl get pods -o wide
 kubectl describe pod/nginx-pod
 ```
 
+5. Get into the pod:
+```bash
+kubectl exec -ti nginx-pod -- /bin/bash
+```
+
 ---
 
 ### In case you didn't create a cluster before, start one using the kind config provided
@@ -49,3 +54,11 @@ But obviously make sure you install kind before (on macOS just use brew install 
 And also make sure you put the config file in the right place.
 
 If not just modify the ```kind create``` command
+
+You can also run
+
+```bash
+echo kind_cluster > ~/.kube/kind_cluster
+```
+
+to move the config file where it should be.
